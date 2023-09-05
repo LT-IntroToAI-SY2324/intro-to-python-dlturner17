@@ -13,11 +13,11 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 ## Reflection Questions
 
 1. What is your initial thoughts about the python programming language?
-
+    My intitial thoughts about the python programming language is that it is simialar to the java programming language except you dont need the semicolons, which i like because i always forgot the semicolon
 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
-
+    Similiarites between java and python is they have strings, booleans, doubles, and floats. The differences like i said is that you don't need semicolons 
 
 
 3. What are some things that you learned through this assignment?

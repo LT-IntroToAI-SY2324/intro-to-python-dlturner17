@@ -6,7 +6,7 @@
 
 # str
 y = "I love Computer Science!"
-
+print(y)
 # numbers
 mynum = 47
 anothernum = 47.7
@@ -19,7 +19,7 @@ print(flag)
 
 # lists - can hold a list of items of any type
 lane_tech = ["chicago", "high school", 1908, 60618, "addison/western"]
-print(lane_tech.reverse())
+
 print(lane_tech)
 z = lane_tech.pop()
 print(z)

@@ -1,1 +1,4 @@
-# We will write a rock paper scissors game in class - Complete it in this file
+# We will write a rock paper scissors game in class - Complete it in this 
+x = "rock"
+y = "paper"
+z = "scissors"
