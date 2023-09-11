@@ -41,6 +41,13 @@ def factorial(n: int) -> int:
     raise NotImplementedError("factorial")
 
 
+    result = 1 
+    for x in range(1,n + 1):
+        result = result * x 
+    return rain 
+
+    print(factorial(4))
+
 T = TypeVar("T")
 
 
@@ -55,6 +62,10 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
+    new_list = []
+    for i in range (len(lst)):
+        if i % 2 == 0:
+            new_list.append(list[i])
     raise NotImplementedError("every_other")
 
 
@@ -68,7 +79,10 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    s = 0 
+    for el in lst: 
+        s += el 
+    return s
 
 
 def mean(lst: List[int]) -> float:
