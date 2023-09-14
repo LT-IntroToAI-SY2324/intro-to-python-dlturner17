@@ -25,7 +25,10 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
-    raise NotImplementedError("absolute")
+    if n<0:
+        return -1*n
+    else:
+        return n
 
 
 def factorial(n: int) -> int:
@@ -38,15 +41,13 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
-
-
     result = 1 
-    for x in range(1,n + 1):
-        result = result * x 
-    return rain 
+    for i in range (1, n + 1):
+        result *= 1
+    return result 
 
-    print(factorial(4))
+
+
 
 T = TypeVar("T")
 
@@ -66,7 +67,7 @@ def every_other(lst: List[T]) -> List[T]:
     for i in range (len(lst)):
         if i % 2 == 0:
             new_list.append(list[i])
-    raise NotImplementedError("every_other")
+    
 
 
 def sum_list(lst: List[int]) -> int:
@@ -94,7 +95,9 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
+    if len(lst) == 0:
+        return 0 
+    return sum_list(lst) / len(lst)
 
 
 def median(lst: List[int]) -> float:
@@ -109,7 +112,12 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+    if len(lst) % 2 == 1:
+        return (lst[len(lst) // 2])
+    else:
+        el1 = lst[len(lst)//2]
+        el2 = lst[len(lst)//2 - 1]
+        return (el1 + el2) / 2
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
@@ -131,7 +139,24 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    raise NotImplementedError("duck_duck_goose")
+    i = 0 
+    current = "duck1"
+    while len(lst) > 2: 
+        if current ==  "duck1":
+            current = "duck2"
+            i += 1
+        elif current == "duck2":
+            current = "goose"
+            i += 1
+        else: 
+            lst = lst[:i] + lst[i + 1:]
+        if i >= len(lst):
+            i -= len(lst)
+    return lst 
+
+
+
+
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
